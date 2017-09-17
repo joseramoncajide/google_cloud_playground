@@ -6,20 +6,20 @@
     source ~/.bash_profile
     gcloud init
 
-gcloud components update &&
-gcloud components install beta
+    gcloud components update &&
+    gcloud components install beta
 
 
-gsutil mb -c regional -l europe-west1 gs://project_cloud_functions
-gsutil mb -c regional -l europe-west1 gs://project_inbox
+    gsutil mb -c regional -l europe-west1 gs://project_cloud_functions
+    gsutil mb -c regional -l europe-west1 gs://project_inbox
 
-mkdir ~/gcf_gcs
-cd ~/gcf_gcs
+    mkdir ~/gcf_gcs
+    cd ~/gcf_gcs
 
-gcloud beta functions deploy helloGCS --stage-bucket project_cloud_functions --trigger-bucket project_inbox
+    gcloud beta functions deploy helloGCS --stage-bucket project_cloud_functions --trigger-bucket project_inbox
 
-# testing
-touch foo.csv
+## testing
 
-gsutil cp foo.csv gs://project_inbox
-gcloud beta functions logs read --limit 50
+    touch foo.csv
+    gsutil cp foo.csv gs://project_inbox
+    gcloud beta functions logs read --limit 50
