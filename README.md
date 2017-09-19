@@ -16,6 +16,10 @@
     mkdir ~/gcf_gcs
     cd ~/gcf_gcs
 
+    npm init
+    npm install --save @google-cloud/bigquery
+    npm install --save @google-cloud/storage
+
     gcloud beta functions deploy helloGCS --stage-bucket project_cloud_functions --trigger-bucket project_inbox
 
 ## testing
