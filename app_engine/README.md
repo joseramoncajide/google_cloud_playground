@@ -1,4 +1,6 @@
-# Instrucciones para Txema
+# Google App Engine mail handler app
+
+Esta app monitoriza todo los buzones de correo del tipo *@*.appspotmail.com. Cuando encuentra un mail con un CSV lo guarda en Google Cloud Storage.
 
 1. Clonar repo
 
