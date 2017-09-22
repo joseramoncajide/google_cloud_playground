@@ -19,7 +19,7 @@
 
 # [START imports]
 import os
-
+import logging
 
 from google.appengine.api import app_identity
 from google.appengine.ext import vendor
@@ -30,6 +30,12 @@ import webapp2
 import cloudstorage as gcs
 
 
+if os.getenv('SERVER_SOFTWARE', '').startswith('Google App Engine/'):
+  # Production
+  logging.info("Environment: PROD")
+else:
+  # Local development server
+  logging.info("Environment: DEV")
 
 
 class MainPage(webapp2.RequestHandler):
@@ -46,7 +52,7 @@ class MainPage(webapp2.RequestHandler):
                             + os.environ['CURRENT_VERSION_ID'] + '\n')
         self.response.write('Using bucket name: ' + bucket_name + '\n\n')
 
-        filename = '/' + bucket_name + "/test.csv"
+        filename = '/ventura24_incoming_files/test2.csv'
 
         write_retry_params = gcs.RetryParams(backoff_factor=1.1)
         with gcs.open(
