@@ -1,0 +1,157 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "Year",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Month",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "DayofMonth",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "DayOfWeek",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "DepTime",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "CRSDepTime",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ArrTime",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "CRSArrTime",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "UniqueCarrier",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "FlightNum",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "TailNum",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ActualElapsedTime",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "CRSElapsedTime",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "AirTime",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ArrDelay",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "DepDelay",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Origin",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Dest",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Distance",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "TaxiIn",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "TaxiOut",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Cancelled",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "CancellationCode",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Diverted",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "CarrierDelay",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "WeatherDelay",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "NASDelay",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "SecurityDelay",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "LateAircraftDelay",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "IsArrDelayed",
+    "type": "BOOLEAN"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "IsDepDelayed",
+    "type": "BOOLEAN"
+  }
+]
