@@ -1,0 +1,5 @@
+cron:
+- description: "strem data"
+  url: /
+  schedule: every 1 minutes
+  timezone: Europe/Madrid
